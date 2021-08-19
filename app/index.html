@@ -1,20 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Автозапчасти</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
+    <!-- start header -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <div class="header__left">
+                        <ul class="header__list">
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Гарантия</a></li>
+                            <li><a href="#">Вопрос - Ответ</a></li>
+                            <li><a href="#">Бонусная программа</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__right">
+                        Режим работы: <span> Пн-Пт с 9:00 до 18:00 </span>
+                    </div>
+                </div>
+                <div class="header__middle">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="images/header/logo.png" alt="Автозапчасти">
+                        </a>
+                    </div>
+                    <form action="">
+                        <select>
+                            <option disabled selected>Выберите марку</option>
+                            <option>Пункт 2</option>
+                        </select>
+                        <input type="text" placeholder="Искать ...">
+                        <button><img src="images/header/search.svg" alt="search"></button>
+                    </form>
+                    <a href="#" class="korzinka">
+                        <img src="images/header/korzinka.svg" alt="korzinka">
+                    </a>
+                    <a href="#">
+                        Войти
+                    </a>
+                </div>
+                <div class="header__bottom">
+                    <a href="#" class="header__item">
+                        Каталог запчастей
+                    </a>
+                    <a href="#" class="header__item">
+                        Автокаталог
+                    </a>
+                    <a href="#" class="header__item">
+                        О компании
+                    </a>
+                    <a href="#" class="header__item">
+                        Сотрудничество
+                    </a>
+                    <a href="#" class="header__item">
+                        Контакты
+                    </a>
+                    <select id="select-1">
+                        <option selected data-value="Беслпатный звонок по РФ">
+                            8 800 444 55 66
+                        </option>
+                        <option data-value="Беслпатный звонок по РФ">
+                            8 800 444 55 66
+                        </option>
+                    </select>
+                    <label for="select-1">
+                        Беслпатный звонок по РФ
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- end header -->
+
+
+    <!-- start img -->
+
+    <section class="img">
+        <div class="container">
+            <div class="img__inner" style="background-image: url(images/img/bg.jpg);">
+                <div class="img__title">
+                    Продажа автозапчастей для грузовиков и спецтехники, <br>
+                    с доставкой и по доступным ценам.
+                </div>
+                <p>
+                    Регистрируйтесь, получайте крутые бонусы и доступ к иллюстрированному каталогу, а также многие другие привилегии.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- end img -->
+
+    <!-- start about -->
+
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <a class="about__item" href="#">
+                    <div class="about__img">
+                        <img src="images/about/item1.png" alt="">
+                    </div>
+                    <div class="about__text">
+                        Бесплатная доставка до терминала ТК
+                    </div>
+                </a>
+                <a class="about__item" href="#">
+                    <div class="about__img">
+                        <img src="images/about/item2.png" alt="">
+                    </div>
+                    <div class="about__text">
+                        Удобный и быстрый подбор запчастей
+                    </div>
+                </a>
+                <a class="about__item" href="#">
+                    <div class="about__img">
+                        <img src="images/about/item3.png" alt="">
+                    </div>
+                    <div class="about__text">
+                        Бесплатный возврат всех товаров
+                    </div>
+                </a>
+                <a class="about__item" href="#">
+                    <div class="about__img">
+                        <img src="images/about/item4.png" alt="">
+                    </div>
+                    <div class="about__text">
+                        Мы уже более 9 лет служим вам 
+                    </div>
+                </a>
+                <a class="about__item" href="#">
+                    <div class="about__img">
+                        <img src="images/about/item5.png" alt="">
+                    </div>
+                    <div class="about__text">
+                        Клиентская служба через call-center
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- end about -->
+
+
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

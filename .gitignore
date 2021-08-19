@@ -6,4 +6,3 @@ DC_Store
 *.log
 node_modules/
 app/css/
-package-lock.json

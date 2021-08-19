@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+.container{
+    max-width: 1380px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}

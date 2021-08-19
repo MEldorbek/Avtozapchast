@@ -1,5 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+@import '../fonts/stylesheet.css';
+@import 'globals';
+@import 'header';
+@import 'img';
