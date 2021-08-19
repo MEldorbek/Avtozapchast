@@ -1,0 +1,44 @@
+.models {
+    &__inner {
+        display: flex;
+    }
+    &__item {
+        width: 100%;
+        &:nth-child(3),
+        &:last-child {
+            width: 50%;
+        }
+        & li {
+            width: 200px;
+            height: 45px;
+            display: inline-block;
+            padding: 14px 16px 13px;
+            margin-left: -16px;
+            &:hover{
+                background-color: #F2F2F2;
+                & a{
+                    color: rgba(#000, 1);
+                }
+            }
+            & a {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 550;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: rgba(#000, 0.5);
+            }
+        }
+    }
+    &__title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0px;
+    }
+    &__mods {
+        list-style: none;
+        padding: 0;
+    }
+}

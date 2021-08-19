@@ -1,0 +1,17 @@
+.about {
+    margin-bottom: 76px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        & a {
+            display: flex;
+            align-items: center;
+            & > * + * {
+                margin-left: 8px;
+            }
+        }
+    }
+    &__text{
+        width: 180px;
+    }
+}

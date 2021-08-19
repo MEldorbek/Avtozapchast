@@ -1,0 +1,76 @@
+.stock {
+    margin-bottom: 67px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+        & a {
+            background-color: #f7f8fa;
+            border-radius: 12px;
+            padding: 10px 16px 9px;
+            color: #3456AF;
+            transition: all .5s;
+            border: 1px solid transparent;
+            &:hover{
+                color: #fff;
+                border: 1px solid #3456AF;
+                background-color: gray;
+            }
+        }
+    }
+    &__slider {
+        width: 100%;
+        height: 218px;
+        & .slick-slide {
+            opacity: 0;
+            transform: scale(0.5) translateX(-100px) !important;
+            & + .slick-active {
+                transform: scale(0.8) translateX(-200px) !important;
+            }
+        }
+        & .slick-active {
+            opacity: 0.3;
+            transform: scale(0.8) translateX(-50px) !important;
+            & + .slick-current {
+                transform: scale(1) translateX(-50px) !important;
+            }
+        }
+        & .slick-current {
+            opacity: 1;
+            transform: scale(1) translateX(-50px) !important;
+            & + .slick-active {
+                transform: scale(0.8) translateX(100px) !important;
+            }
+        }
+        & button.slick-arrow {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background-color: #fff;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            z-index: 1;
+        }
+        & button.slick-prev {
+            background-image: url(../images/stock/left.svg);
+            left: 0;
+        }
+        & button.slick-next {
+            right: 0;
+            background-image: url(../images/stock/right.svg);
+        }
+    }
+    &__item {
+        width: 522px !important;
+        min-height: 218px;
+        border-radius: 12px;
+        filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.08));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
