@@ -143,6 +143,10 @@
             letter-spacing: 0px;
             text-align: center;
             padding: 22px 0 22px;
+            &:not(:last-child):hover{
+                background-color: #3456af;
+                color: #fff;
+            }
             &:first-child {
                 padding: 19px 49px 18px 107px;
                 position: relative;
